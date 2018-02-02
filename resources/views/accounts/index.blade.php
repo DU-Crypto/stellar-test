@@ -24,6 +24,8 @@
                         
                          @foreach ($accounts as $account)
                              <tr>
+                              <td>{<deposit-component></deposit-component>
+                              <withdraw-component></withdraw-component></td>
                               <td>{{ $account->address }}</td>
                               <td>{{ $account->balance }}</td>
                             </tr>
@@ -37,9 +39,9 @@
                 </div>
             </div>
         </div>
-          <div>
+          <div class="col-md-8 col-md-offset-2">
             <add-account-component></add-account-component>
-            <withdraw-component></withdraw-component>
+
           </div>
     </div>
 

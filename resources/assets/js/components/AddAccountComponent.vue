@@ -1,5 +1,5 @@
 <template>
-    <button type="button" class="btn btn-success" v-on:click="createAccount">Add Account</button>
+    <button type="submit" class="btn btn-success" v-on:click="createAccount">Add Account</button>
 </template>
 
 <script>
