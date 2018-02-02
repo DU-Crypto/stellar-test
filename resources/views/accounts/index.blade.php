@@ -16,6 +16,7 @@
                     <table class="table table-responsive">
                       <thead>
                         <tr>
+                          <th>  </th>
                           <th>Address</th>
                           <th>Balance</th>
                         </tr>
@@ -24,7 +25,7 @@
                         
                          @foreach ($accounts as $account)
                              <tr>
-                              <td>{<deposit-component></deposit-component>
+                              <td><deposit-component></deposit-component>
                               <withdraw-component></withdraw-component></td>
                               <td>{{ $account->address }}</td>
                               <td>{{ $account->balance }}</td>
