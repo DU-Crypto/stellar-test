@@ -17,12 +17,15 @@ class AccountsController extends Controller
     { 	
     	
     		
-         return  Account::create([
+         return Account::create([
            	'user_id'=>  auth()->id() , 
            	'symbol'=> $request->symbol, 
            	'address'=> $request->address, 
            	'key'=> $request->key,
            	 'balance'=> $request->balance
            ]);
+            
+
+
     }
 }

@@ -15,9 +15,10 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('add-account-component', require('./components/AddAccountComponent.vue'));
+Vue.component('add-account-component', require('./components/AddAccountComponent.vue')); 
 Vue.component('withdraw-component', require('./components/WithdrawComponent.vue'));
 Vue.component('deposit-component', require('./components/DepositComponent.vue'));
+
 const app = new Vue({
     el: '#app'
 });

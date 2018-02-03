@@ -5,9 +5,10 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Accounts</div>
+                <div class="panel-heading">Lumens</div>
 
                 <div class="panel-body">
+
                     @if (session('status'))
                         <div class="alert alert-success">
                             {{ session('status') }}
@@ -25,7 +26,7 @@
                         
                          @foreach ($accounts as $account)
                              <tr>
-                              <td><deposit-component></deposit-component>
+                              <td><deposit-component account=$account></deposit-component>
                               <withdraw-component></withdraw-component></td>
                               <td>{{ $account->address }}</td>
                               <td>{{ $account->balance }}</td>
@@ -33,13 +34,12 @@
                         @endforeach
                       </tbody>
                     </table>
-                    <ul>
-                       
-                    </ul>
+                    
 
                 </div>
             </div>
         </div>
+
           <div class="col-md-8 col-md-offset-2">
             <add-account-component></add-account-component>
 

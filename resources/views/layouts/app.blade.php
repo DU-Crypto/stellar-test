@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title> J.A.R.V.I.S Lumens}</title>
+    <title> J.A.R.V.I.S Wallet</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -29,7 +29,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        J.A.R.V.I.S Lumens
+                        J.A.R.V.I.S Wallet
                     </a>
                 </div>
 
